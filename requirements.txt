@@ -1,0 +1,15 @@
+# requirements.txt
+# Proyek: Analisis Sentimen Kebijakan Efisiensi Anggaran (SVM & IndoBERT)
+# Jalankan: pip install -r requirements.txt
+
+pandas            # membaca & mengolah dataset (CSV/Excel)
+numpy             # operasi numerik & perhitungan bobot kelas
+scikit-learn      # TF-IDF, SVM, pembagian data, metrik evaluasi
+Sastrawi          # stopword removal & stemming (khusus pemodelan SVM)
+transformers      # model IndoBERT & proses fine-tuning
+datasets          # menyiapkan data untuk pelatihan IndoBERT
+accelerate        # backend pelatihan (dibutuhkan oleh Trainer)
+torch             # PyTorch, backend model IndoBERT
+matplotlib        # visualisasi (confusion matrix, grafik, wordcloud)
+wordcloud         # membuat wordcloud tiap kelas sentimen
+openpyxl          # membaca berkas Excel (sampel validasi .xlsx)
